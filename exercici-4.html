@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>click demo jquery</title>
+  <style>
+  
+  </style>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+</head>
+<body>
+ 
+<input id="input_texto" type="input"></input>
+<button id="btn_action" type="button">ACCIÓN</button>
+
+<p id="p_result"> Resultado</p>
+ <div id="resultado"></div>
+<script>
+/*Mostrar el texto del input al clicar el botón: */
+$(function(){
+			$("#btn_action").click(function(){
+				var valor_campo = $("#input_texto").val();
+				alert(valor_campo);
+				$("#resultado").text(valor_campo) ;
+				
+				
+			});
+		});
+</script>
+ 
+</body>
+</html>
